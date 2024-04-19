@@ -1,13 +1,4 @@
-[[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
-name = "pypi"
-
-[packages]
-fastapi="*"
-unicorn="*"
-pydantic="*"
-google-generativeai="*"
-
-[requires]
-python_version = "3.12.2"
+fastapi
+uvicorn
+pydantic
+google-generativeai
