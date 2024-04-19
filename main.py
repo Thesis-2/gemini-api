@@ -4,7 +4,7 @@ import google.generativeai as genai
 import os
 
 # Setup your API key
-genai.configure(api_key=os.environ.get('API_KEY'))
+genai.configure(api_key=os.environ.get('API_KEY') )
 GeminiModel = genai.GenerativeModel('gemini-pro')
 
 app = FastAPI()
