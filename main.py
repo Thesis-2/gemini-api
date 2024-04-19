@@ -22,6 +22,13 @@ async def generate_response(prompt: Prompt):
         return {"response": generated_essay}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+@app.get("/")
+async def greet_visitor():
+    """
+    Returns a greeting to the visitors.
+    """
+    return {"message": "Hi visitors"}
 
 if __name__ == "__main__":
     import uvicorn
