@@ -7,7 +7,6 @@
     { "src": "/(.*)", "dest": "/main.py" }
   ],
   "env": {
-    "APP_MODULE": "main:app",
-    "PYTHON_VERSION": "3.12.2"
+    "APP_MODULE": "main:app"
   }
 }
